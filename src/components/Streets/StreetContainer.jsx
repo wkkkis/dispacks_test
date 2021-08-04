@@ -16,11 +16,16 @@ const StreetContainer = ({ street, ...props }) => {
   }, []);
 
   const addingClient = (data, address) => {
-    props.addClient(data.email, data.name, data.phone, address)
+    props.addClient(data.email, data.name, data.phone, address, streetId)
   }
 
   const overrideHandler = (data, clientId) => {
-    props.overrideClient(flatMapper(data).addressId, clientId)
+    props.overrideClient(flatMapper(data).addressId, clientId, streetId)
+    // flatMapper(data)
+  }
+
+  const deleteClient = (clientId) => {
+    props.removeClient(clientId, streetId)
   }
 
   const flatMapper = data => {
@@ -35,7 +40,7 @@ const StreetContainer = ({ street, ...props }) => {
           <Street street={item}
                   addClient={addingClient}
                   key={item.addressId}
-                  deleteClient={props.removeClient}
+                  deleteClient={deleteClient}
                   overrideClient={overrideHandler} />
         ))
       }

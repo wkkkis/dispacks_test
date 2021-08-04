@@ -5,7 +5,7 @@ const SET_STREET_DATA = 'SET_STREET_DATA';
 
 let initialState = {
   street: [],
-  companies: []
+  companies: [],
 };
 
 export default function cart(state = initialState, action) {
@@ -27,6 +27,7 @@ export default function cart(state = initialState, action) {
 
 export const setCompanies = payload => ({ type: SET_COMPANY_DATA, payload });
 export const setStreet = payload => ({ type: SET_STREET_DATA, payload });
+
 export const getCompanies = () => async dispatch => {
   let response = await axios.get(`https://dispex.org/api/vtest/Request/companies`);
   dispatch(setCompanies(response.data));
@@ -37,18 +38,32 @@ export const getStreet = (companyId) => async dispatch => {
   dispatch(setStreet(response.data));
 };
 
-export const addClient = (email, name, phone, address) => dispatch => {
-  axios.post(`https://dispex.org/api/vtest/HousingStock/client`, { Email: email, Name: name, Phone: phone }).then( res => {
-    if(res.data.result === "Ok"){
-      dispatch(overrideClient(address, res.data.id))
+export const addClient = (email, name, phone, address, companyId) => dispatch => {
+  axios.post(`https://dispex.org/api/vtest/HousingStock/client`, {
+    Email: email,
+    Name: name,
+    Phone: phone
+  }).then(res => {
+    if (res.data.result === 'Ok') {
+      dispatch(overrideClient(address, res.data.id, companyId));
     }
-  })
+  });
 };
 
-export const removeClient = (clientId) => async dispatch => {
+export const removeClient = (clientId, companyId) => async dispatch => {
   let response = await axios.delete(`https://dispex.org/api/vtest/HousingStock/bind_client/${clientId}`);
+  if (response.status === 200) {
+    dispatch(getStreet(companyId));
+  }
 };
 
-export const overrideClient = (address, clientId) => async dispatch => {
-  let response = await axios.put(`https://dispex.org/api/vtest/HousingStock/bind_client`, { AddressId: address, ClientId: clientId });
-}
+export const overrideClient = (address, clientId, companyId) => async dispatch => {
+  let response = await axios.put(`https://dispex.org/api/vtest/HousingStock/bind_client`, {
+    AddressId: address,
+    ClientId: clientId
+  });
+  if (response.status === 200) {
+    dispatch(getStreet(companyId));
+    dispatch(removeClient(clientId, companyId));
+  }
+};
