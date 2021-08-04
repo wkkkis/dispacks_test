@@ -1,0 +1,116 @@
+.companies-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.companies-item {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 6px;
+  background-color: #EEEE;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.5s ease;
+}
+
+.companies-item:hover {
+  background-color: #F9F9F9;
+}
+
+.companies-item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companies-item span:first-child {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.companies-item span:last-child {
+  position: absolute;
+  bottom: 10px;
+}
+
+.streets-wrap {
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.streets-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px;
+  min-width: 170px;
+  border-radius: 6px;
+  background-color: #EEEE;
+}
+
+form {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #EEEE;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.streets-item span {
+  display: flex;
+}
+
+.street-data {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.streets-item button {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  cursor: pointer;
+}
+
+.streets-client {
+  padding: 5px;
+  min-width: 50px;
+  border-radius: 6px;
+  background-color: #EEE;
+  position: relative;
+}
+
+.add-client-btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.add-client-btn button {
+  width: 100%;
+}
+
+.streets-client-wrap {
+  display: grid;
+}
+
+.clients-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
