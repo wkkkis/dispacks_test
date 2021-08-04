@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b1a7e04-36d5-4ede-b7f2-11f36e7068a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../react-chat-react-node/src/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-growave/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-growave/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/components/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/interfaces/posts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/404.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/_app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/_document.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/about/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/api/echo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/post/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-next/pages/posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Companies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Companies.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Streets/Street.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Streets/Street.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Streets/StreetContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Streets/StreetContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cart.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wAbMI9ODuAzDBGLT44KPNonzio" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\test-dispacks\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\test-dispacks\src\components\Streets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b1a7e04-36d5-4ede-b7f2-11f36e7068a9" name="Default Changelist" comment="" />
+      <created>1627904291664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627904291664</updated>
+      <workItem from="1627904299281" duration="3221000" />
+      <workItem from="1627911996068" duration="38364000" />
+      <workItem from="1628082719105" duration="8480000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -27,7 +27,6 @@ export default function cart(state = initialState, action) {
 
 export const setCompanies = payload => ({ type: SET_COMPANY_DATA, payload });
 export const setStreet = payload => ({ type: SET_STREET_DATA, payload });
-
 export const getCompanies = () => async dispatch => {
   let response = await axios.get(`https://dispex.org/api/vtest/Request/companies`);
   dispatch(setCompanies(response.data));
@@ -52,5 +51,4 @@ export const removeClient = (clientId) => async dispatch => {
 
 export const overrideClient = (address, clientId) => async dispatch => {
   let response = await axios.put(`https://dispex.org/api/vtest/HousingStock/bind_client`, { AddressId: address, ClientId: clientId });
-
 }

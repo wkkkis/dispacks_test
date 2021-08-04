@@ -34,6 +34,7 @@ const Street = ({ street, addClient, deleteClient, overrideClient }) => {
               <div className="streets-client-wrap">
                 <span>Client:</span>
                 <span>name: {client.name}</span>
+                <span>id: {client.id}</span>
                 <span>phone: {client.phone}</span>
                 <span>email: {client.email}</span>
                 <button onClick={() => deleteClient(client.id)}>Delete client</button>

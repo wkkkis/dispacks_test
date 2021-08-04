@@ -1,5 +1,4 @@
 import React from 'react';
-import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { addClient, getStreet, overrideClient, removeClient } from '../../redux/reducers/cart';
 import { useRouter } from '../../hooks/useRouter';

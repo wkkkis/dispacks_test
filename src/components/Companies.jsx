@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { getCompanies } from '../redux/reducers/cart';
 import { Link } from 'react-router-dom';
@@ -31,8 +30,6 @@ const mapStateToProps = state => ({
   companies: state.cart.companies
 });
 
-export default compose(
-  connect(mapStateToProps, {
-    getCompanies
-  })
-)(Companies);
+export default connect(mapStateToProps, {
+    getCompanies })
+(Companies);
